@@ -142,5 +142,120 @@ Shift + Alt + ↑ 或 Shift + Alt + ↓ 向上向下复制一行
 * [ ] C++
 * [x] MarkDown
 ``` 
+* 插入连接
+[MarkDown百度百科](https://baike.baidu.com/item/markdown/3245829?fr=aladdin)
+``` markdown
+      [MarkDown百度百科](https://baike.baidu.com/item/markdown/3245829?fr=aladdin)
+```
+* 插入图片
+> Markdown支持嵌入网络图片或者直接拖入本地图片，其中本地图片格式支持 jpg、png 和 gif。
+
+![](http://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/f6/a3/f3/f6a3f3b8-8243-05ad-41f2-2fe69ae9d0d5/source/512x512bb.jpg)
+``` markdown
+    ![](http://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/f6/a3/f3/f6a3f3b8-8243-05ad-41f2-2fe69ae9d0d5/source/512x512bb.jpg)
+```
+
+* 插入表格
+
+        | 帐户类型 | 免费帐户 | 标准帐户 | 高级帐户 |
+        | --- | --- | --- | --- |
+        | 帐户流量 | 60M | 1GB | 10GB |
+        | 设备数目 | 2台 | 无限制 | 无限制 |
+        | 当前价格 | 免费 | ￥8.17/月 | ￥12.33/月|
+``` markdown
+        | 帐户类型 | 免费帐户 | 标准帐户 | 高级帐户 |
+        | --- | --- | --- | --- |
+        | 帐户流量 | 60M | 1GB | 10GB |
+        | 设备数目 | 2台 | 无限制 | 无限制 |
+        | 当前价格 | 免费 | ￥8.17/月 | ￥12.33/月|
+```
+* 插入源代码
+> 插入源代码功能是为程序员量身定做的。用 ```上下包裹一段代码，并指定一种语言（指定语言可以显示语法高亮）。
+``` html
+``` html
+       <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+        </head>
+        <body>     
+
+        </body>
+        </html>
+
+        ```
+``` 
+####MarkDown编辑工具推荐
+> 可以去使用不同风格的MarkDown工具，最后选择一款自己的喜欢的MarkDown软件。
+
+[VSCode](https://code.visualstudio.com/)
+[Typore](https://www.typora.io/)
+[印象笔记](https://help.yinxiang.com/)
+[Cmd MarkDown 作业部落](https://www.zybuluo.com/cmd/)
+
+####Git & GitHub 入门
+
+#####Git 简介
+![](http://49.234.236.217/tool_files/git.png)[git 下载](https://git-scm.com/)
+> Git是什么？**Git 是 Linux 的创始人 Linus Torvalds 开源的一款分布式版本控制系统，以帮助开发者更好的对项目进行版本管理。每一个优秀的开发者在进行项目开发时都会第一时间给自己的项目加上 Git，以便能更好的追踪代码修改，进行版本回溯等操作。在多人协作的开发过程中，Git 更是必不可少的。**
+
+* git基本原理：
+> git版本管理工具，有3个工作区：                                                   
+1.工作目录
+2.暂存区-----存放工作中更改的文件，避免项目代码丢失。
+3.代码仓库-----当开发功能足够成为一个版本时，提交到仓库。其实就是将暂存区中代码复制一份存储到代码仓库中。
+* Git的基本工作流程
+![](http://49.234.236.217/tool_files/git-flow.png)
+####git bash 命令行模式的基本特点：
+> * 简洁，迅速，高效
+* git bash 基础命令
+
+> pwd (print working directory) 查看当前所在路径--绝对路径
+cd(change directory) 切换目标
+mkdir(make directory) 创建目录
+touch 创建文件
+ls(list) 查看当前目录下的内容
+cat 查看文件内容（一次性将内容全部显示）
+clear 清屏
+q(quit) 退出
+
+Git有两种操作界面，命令行模式和图形界面模式，我们主要使用命令行模式。在Windows下我们安装好Git并点击Git Bash 图标启动Git之后会出现一个命令行窗口如下图所示：
+![](http://49.234.236.217/tool_files/git-2.jpg)
+* Git Bash 命令行模式是使用的Linux系统命令行，所有和Window系统有一些差异，例如上图中 /c/Users 这个路径就和Window系统的下现实 C:\Users 路径显示略有不同，但实际上都是显示的同一个目录路径，实际上 /c/Users = C:\Users 。
+
+[git官方教学](https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%85%B3%E4%BA%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6)
+####GitHub 简介
+>GitHub是什么？**Github是一个基于it的代码托管平台，Github 由Chris Wanstrath, PJ Hyett 与Tom Preston-Werner三位开发者在2008年4月创办。这个星球上最流行的开源托管服务。目前已托管上百万的git项目，很多知名开源项目迁入GitHub，比如Ruby on Rails、jQuery、Ruby、Erlang/OTP；近年流行的开源库往往在GitHub首发，例如：BootStrap、Node.js、CoffeScript等。**
+* 注册GitHub账号
+[github账号](https://github.com/)
+![](http://49.234.236.217/tool_files/git-1.jpg)
+* 首先我们登陆GitHub官网按照提示一步一步申请免费的账号，并且初始化仓库。
+* 然后打开Git Bash 在命令行模式下通过cd 命令进入对应目录，在下图我进入的桌面(Desktop)目录
+![](http://49.234.236.217/tool_files/git1.png)
+* 我们首先设置对应GitHub账号用户名和邮件
+![](http://49.234.236.217/tool_files/git2.png)
+> git config --global user.name 你自己的注册名
+git config --global user.email 你自己的注册邮件
+* 从远程GitHub仓库克隆刚刚初始化的项目
+![](http://49.234.236.217/tool_files/git3.png)
+> git clone https://github.com/你自己的仓库地址
+* 进入克隆目录，然后当完成对文件的编辑保存好之后，我们先将修改后的文件添加到缓存区。
+![](http://49.234.236.217/tool_files/git4.png)
+>git add .
+git commit -m "代码提交的信息"
+* 将提交的结果推送代码到远程GitHub仓库(（在这个过程，系统会要求我们输入远程GitHub的账号和密码，按提示输入即可，由于还原系统的问题，我们就不使用SSH方式登录，但是在后面我们会在单独介绍SSH免密登录）。)
+![](http://49.234.236.217/tool_files/git5.png)
+> git push origin master
+
+####Vue.js
+![](http://49.234.236.217/tool_files/logo.png)
+[Vue.js官方网站](https://cn.vuejs.org/)
+####vue简介
+> **Vue.js**是现今三大流行前端框架之一(Angular.js,React.js,Vue.js),是一个只要拥有的html,css,javascript基础，就能很快学会的易用灵活的用于构建用户界面的渐进式前端框架。
+
 好好学习天天向上
 
+ 
